@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(80, 30, 30);
+}
+
+table{
+    border-style: dashed;
+    width: 100%;
+    background-size: cover;
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-style: inherit;
+}
+
+td{
+
+    box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.692);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 33.33%;
+}
+
+.TD-Isac{
+    color: rgb(0, 0, 0);
+    font-family:"Homespun";
+ 
+    text-align: center;
+    box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.692);
+}
+
+tr{
+    color: black;
+    font-family: "RammetoOne";
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.411);
+    
+}
+
+
+.TR-Titulo{
+    background-color: aliceblue;
+    text-align: center;
+    font-family: "Karma";
+}
+
+.CERT-Isac{
+    max-height: 230px;
+    max-width: 230px;
+    margin-right: 5px;
+}
+button{
+    background-color: #6d100a; 
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 50px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    left: 50%;
+    top: 97%;
+    box-shadow: 5px 6px 0px rgb(0, 0, 0);
+    font-family: "Abril-Fatface";
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+
+}
+a{
+    color: white;
+    font-family: "Homespun";
+}
+
+
+@font-face{
+    font-family:"Karma";
+    src:url("Fonts-Isac/Karma/KarmaFuture.ttf")format("truetype");
+}   
+@font-face{
+    font-family:"Homespun";
+    src:url("Fonts-Isac/Homespun/homespun.ttf")format("truetype");
+}   
+
+.H1-Darkness{
+    font-family: "Karma";
+}

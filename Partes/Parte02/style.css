@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(maderas.png);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.encabezado{
+background-image: url(1550.png);
+background-position: center;
+background-repeat: no-repeat;
+height: 20vh;
+}
+
+th,td{
+    text-align:center;
+    padding: 10px;
+}

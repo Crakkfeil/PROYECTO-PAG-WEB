@@ -1,0 +1,13 @@
+.TR-Blog{
+    background-color: rgba(211, 193, 114, 0.973);
+    color: black;
+    font-family: "RammetoOne";
+    text-align: center;
+}
+.TABLE-Blog{
+
+    width: 100%;
+    background-size: cover;
+    border-collapse: separate;
+    border-spacing: 25px;
+}
