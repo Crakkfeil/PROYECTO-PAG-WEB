@@ -1,0 +1,37 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Century;
+}
+
+body{
+    background-color: #691919ed;
+
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+}
+.in-flex:first-child{
+    flex: 2;
+    padding:25px;
+    background-color: rgb(1, 122, 11);
+    margin: 20px;
+    margin-bottom:0px ;
+    
+}
+.in-flex div{
+    padding: 25px;
+    background-color: rgb(7, 132, 241);
+    margin: 20px;
+}
+
+.in-flex h1, h3{
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: auto; /* Centra el elemento verticalmente */
+}
