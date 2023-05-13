@@ -1,37 +1,196 @@
-
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: Century;
 }
 
-body{
-    background-color: #691919ed;
+body {
+    background-color: #161616;
 
 }
-.home{
+
+.home {
     display: flex;
     flex-wrap: wrap;
 }
-.in-flex{
+
+.in-flex {
     flex: 1;
     min-width: 250px;
 }
-.in-flex:first-child{
+
+.in-flex:first-child {
     flex: 2;
-    padding:25px;
-    background-color: rgb(1, 122, 11);
-    margin: 20px;
-    margin-bottom:0px ;
-    
-}
-.in-flex div{
     padding: 25px;
-    background-color: rgb(7, 132, 241);
+    background-color: #ffc857;
     margin: 20px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10%;
+    box-shadow: 0 0 25px #ffc857;
+
 }
 
-.in-flex h1, h3{
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: auto; /* Centra el elemento verticalmente */
+.in-flex div {
+    padding: 25px;
+    background-color: #2E4052;
+    margin: 20px;
+    box-shadow: 0 0 15px rgb(84, 218, 177);
+    border-radius: 20%;
+    color: #BDD9BF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.in-flex h1,
+h3 {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    margin: auto;
+    /* Centra el elemento verticalmente */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos base para los botones */
+.BOTONES {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px white;
+    margin-top: 10px;
+
+}
+
+.primero,
+.segundo,
+.tercero,
+.cuarto {
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Estilos de los botones en pantallas más grandes */
+@media screen and (min-width: 768px) {
+    .BOTONES {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+
+    }
+
+    .primero,
+    .segundo,
+    .tercero,
+    .cuarto {
+        flex-basis: 25%;
+    }
+
+    .primero:hover,
+    .segundo:hover,
+    .tercero:hover,
+    .cuarto:hover {
+        box-shadow: 0 0 10px rgb(115, 255, 49);
+        text-shadow: 0 0 20px #2dff3b;
+
+    }
+}
+
+/* Estilos de los botones en pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .BOTONES {
+        width: auto;
+        flex-wrap: wrap;
+        border-radius: 10%;
+        margin: 20px ;
+        margin-bottom: 0px;
+    }
+
+    .primero,
+    .segundo,
+    .tercero,
+    .cuarto {
+        flex-basis: 50%;
+        margin-bottom: 10px;
+    }
+
+    .primero:hover,
+    .segundo:hover,
+    .tercero:hover,
+    .cuarto:hover {
+        box-shadow: none;
+        text-shadow: none;
+        border-radius: 0;
+        box-shadow: 0 0 10px rgb(115, 255, 49);
+        text-shadow: 0 0 20px #2dff3b;
+        border-radius: 5%;        
+    }
+}
+
+
+img {
+    display: block;
+    /* Convierte la imagen en un elemento de bloque */
+    margin: auto;
+    /* Centra la imagen horizontalmente */
+
+}
+
+
+.in-flex .Redes{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0%;
+    border-radius: 0%;
+
+}
+.in-flex .github{
+    background-color: transparent; 
+    box-shadow:none;
+    width: 10%;
+}
+
+.github img:hover{
+    box-shadow: 0 0 20px #161616;
+    border-radius: 50%;
+
+}
+
+
+.in-flex .facebook{
+    background-color: transparent;
+    box-shadow:none;
+    width: 10%;
+    
+    
+}
+
+.facebook img:hover{
+    box-shadow: 0 0 20px #0230ff;
+    border-radius: 50%;
+
+}
+
+.Redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-flex .instagram{
+    background-color: transparent;
+    box-shadow:none;
+    width: 10%;
+}
+
+.instagram img:hover{
+    box-shadow:
+     0 0  30px #fa8600,
+     0 0  69 px red;
+    border-radius: 33%;
+
 }
