@@ -1,0 +1,62 @@
+body{
+    margin: 4.6em;
+    padding: 0;
+    background: url(imagenes/pollo.jpg) no-repeat;
+    background-size: cover;
+  }
+  .box{
+    width: 350px;
+    background: #ebc982;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    color: rgb(5, 5, 5);
+    font-family: 'Century Gothic',sans-serif;
+  }
+  h1{
+ text-align: center;
+ color: rgb(17, 17, 17);
+ font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  h1{
+    margin: 0em;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+
+  p{
+    text-align: left;
+  }
+.box-img{
+    width: 200px;
+}
+input{
+    float: left;
+
+}
+label{
+    float: left;
+}
+    a{
+    
+    width: 150px;
+    font-weight: 700;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100px;
+    padding: 15px 30px;
+    margin: 150px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+    }
+    
+    a:hover {
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    }
+    h2{
+        margin: 1em;
+    }

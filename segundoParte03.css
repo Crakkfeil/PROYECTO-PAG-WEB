@@ -61,6 +61,13 @@
     margin-right: 10px;
 }
 
+.Parte02IMG{
+  box-shadow: 10px 10px 100px #ffd857;
+}
+.Parte03IMGC{
+  box-shadow: 10px 10px 100px #ffd857;
+}
+
 
   .PIE-TD-CONTACT{
     font-family: "Abril-Fatface";
@@ -110,6 +117,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
+    margin-left:40%; 
   }
   .button-Quienes:after {
     position: absolute;
@@ -136,6 +144,6 @@
     height: 100%;
   }
   .button-Quienes:active {
-    top: 2px;
+    box-shadow: 0 0 20px #eaf818;
   }
   
