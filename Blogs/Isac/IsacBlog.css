@@ -1,58 +1,67 @@
-body{
-    background-color: rgb(80, 30, 30);
+body {
+    background-color: #161616;
 }
 
-table{
+table {
     border-style: dashed;
     width: 100%;
     background-size: cover;
     border-collapse: separate;
     border-spacing: 10px;
-    border-style: inherit;
+
+    border-radius: 5%;
 }
 
-td{
+td {
 
     box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.692);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 33.33%;
+    border-radius: 10%;
 }
 
-.TD-Isac{
+.TD-Isac {
     color: rgb(0, 0, 0);
-    font-family:"Homespun";
- 
+    font-family: "Homespun";
+
     text-align: center;
     box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.692);
+
 }
 
-tr{
+tr {
     color: black;
     font-family: "RammetoOne";
     text-align: center;
     background-color: rgba(240, 248, 255, 0.411);
-    
+
 }
 
 
-.TR-Titulo{
+.TR-Titulo {
     background-color: aliceblue;
     text-align: center;
     font-family: "Karma";
+    box-shadow: beige 1px 1px 10px;
+
+}
+.TR-Titulo a{
+    text-decoration: green;
 }
 
-.CERT-Isac{
+.CERT-Isac {
     max-height: 230px;
     max-width: 230px;
     margin-right: 5px;
 }
-button{
-    background-color: #6d100a; 
-    border: none; 
-    color: rgb(0, 0, 0); 
-    padding: 10px 50px; 
-    text-align: center; 
-    text-decoration: none; 
+
+button {
+    background-color: #6d100a;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
@@ -63,24 +72,204 @@ button{
     font-family: "Abril-Fatface";
     justify-content: center;
     align-items: center;
-    border-radius: 20px; 
+    border-radius: 20px;
 
 }
-a{
-    color: white;
-    font-family: "Homespun";
-}
 
 
-@font-face{
-    font-family:"Karma";
-    src:url("Fonts-Isac/Karma/KarmaFuture.ttf")format("truetype");
-}   
-@font-face{
-    font-family:"Homespun";
-    src:url("Fonts-Isac/Homespun/homespun.ttf")format("truetype");
-}   
-
-.H1-Darkness{
+@font-face {
     font-family: "Karma";
+    src: url("Fonts-Isac/Karma/KarmaFuture.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "Homespun";
+    src: url("Fonts-Isac/Homespun/homespun.ttf")format("truetype");
+}
+
+.H1-Darkness {
+    font-family: "Karma";
+}
+
+
+.TD-Isac {
+    color: red;
+    text-shadow: red 1px 1px 20px;
+
+    border: #b83f3f;
+    border-style: solid;
+    border-radius: 16%;
+    box-shadow: red 1px 1px 20px;
+}
+
+a{
+color: green;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .IMAGEN-PERFIL {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .TD-Isac {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .in-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .in-flex:first-child {
+        flex: 1;
+        padding: 25px;
+        background-color: #1d0000;
+        margin: 20px;
+        margin-bottom: 0px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10%;
+        box-shadow: 0 0 25px #ffc857;
+        border-style: solid;
+        border-color: #ffc857;
+
+    }
+
+    .in-flex div {
+        padding: 25px;
+        background-color: #2E4052;
+        margin: 20px;
+        box-shadow: 0 0 15px rgb(84, 218, 177);
+        border-radius: 20%;
+        color: #BDD9BF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .in-flex {
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        float: right;
+        margin: 5%;
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .BLOQUES {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .CERTIFICADOS {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .in-flex .CERTIFICADOS {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+/* Estilos de los botones en pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .TR-Titulo {
+        font-size: 15px;
+    }
+
+    .IMAGEN-PERFIL img {
+        width: 30%;
+
+    }
+
+    .IMAGEN-PERFIL {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .in-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .in-flex:first-child {
+        flex: 1;
+        padding: 0%;
+        background-color: #1d0000;
+        margin: 0%;
+        margin-bottom: 0px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10%;
+        box-shadow: 0 0 25px #ffc857;
+        border-style: solid;
+        border-color: #ffc857;
+
+    }
+
+    .in-flex div {
+        padding: 25px;
+        background-color: #2E4052;
+        margin: 20px;
+        box-shadow: 0 0 15px rgb(84, 218, 177);
+        border-radius: 20%;
+        color: #BDD9BF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .in-flex {
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        float: right;
+        margin: 5%;
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .BLOQUES {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+
+
+    .in-flex .CERTIFICADOS {
+        background-color: transparent;
+        box-shadow: none;
+
+    }
+
+
+    .in-flex p {
+        font-size: 90%;
+    }
+
+
 }

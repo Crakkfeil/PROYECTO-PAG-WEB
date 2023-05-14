@@ -8,6 +8,11 @@ body {
     background-color: #161616;
 
 }
+a{
+    color: #161616;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .home {
     display: flex;
@@ -22,12 +27,14 @@ body {
 .in-flex:first-child {
     flex: 2;
     padding: 25px;
-    background-color: #ffc857;
+    background-color: #1d0000;
     margin: 20px;
     margin-bottom: 0px;
     box-shadow: 0 0 10px black;
     border-radius: 10%;
     box-shadow: 0 0 25px #ffc857;
+    border-style: solid;
+    border-color: #ffc857;
 
 }
 
@@ -48,6 +55,16 @@ h3 {
     margin: auto;
     /* Centra el elemento verticalmente */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 145, 117);
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+    animation: blink 1s linear infinite;
+    size: 100px;
+    font-size: 40px;
+}
+
+.in-flex p {
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* Estilos base para los botones */
@@ -98,6 +115,9 @@ h3 {
         text-shadow: 0 0 20px #2dff3b;
 
     }
+    .github img{
+        width: 100%;
+    }
 }
 
 /* Estilos de los botones en pantallas más pequeñas */
@@ -106,7 +126,7 @@ h3 {
         width: auto;
         flex-wrap: wrap;
         border-radius: 10%;
-        margin: 20px ;
+        margin: 20px;
         margin-bottom: 0px;
     }
 
@@ -127,8 +147,51 @@ h3 {
         border-radius: 0;
         box-shadow: 0 0 10px rgb(115, 255, 49);
         text-shadow: 0 0 20px #2dff3b;
-        border-radius: 5%;        
+        border-radius: 5%;
     }
+
+    .in-flex h1,
+    h3 {
+        font-size: 30px;
+    }
+
+    .perfil{
+        width: 100px;
+        height: 100px;
+    }
+    .github img{
+        width: 50px;
+        height: 50px;
+    }
+    .facebook img{
+        width: 50px;
+        height: 50px;
+    }
+    .instagram img{
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    .in-flex .github{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    
+
+    .in-flex .facebook{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .in-flex .instagram{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        padding-right: 20%;
+    }
+
 }
 
 
@@ -141,56 +204,78 @@ img {
 }
 
 
-.in-flex .Redes{
+.in-flex .Redes {
     background-color: transparent;
     box-shadow: none;
     padding: 0%;
     border-radius: 0%;
 
 }
-.in-flex .github{
-    background-color: transparent; 
-    box-shadow:none;
-    width: 10%;
-}
 
-.github img:hover{
-    box-shadow: 0 0 20px #161616;
-    border-radius: 50%;
-
-}
-
-
-.in-flex .facebook{
+.in-flex .github {
     background-color: transparent;
-    box-shadow:none;
+    box-shadow: none;
     width: 10%;
+
     
-    
+
 }
 
-.facebook img:hover{
-    box-shadow: 0 0 20px #0230ff;
+
+.github img:hover {
+    box-shadow: 0 0 20px #ffffff;
+    border-radius: 50%;
+
+
+
+}
+
+
+.in-flex .facebook {
+    background-color: transparent;
+    box-shadow: none;
+    width: 10%;
+
+
+}
+
+.facebook img:hover {
+    box-shadow: 0 0 30px #0230ff;
     border-radius: 50%;
 
 }
 
-.Redes{
+.Redes {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.in-flex .instagram{
+.in-flex .instagram {
     background-color: transparent;
-    box-shadow:none;
+    box-shadow: none;
     width: 10%;
 }
 
-.instagram img:hover{
+.instagram img:hover {
     box-shadow:
-     0 0  30px #fa8600,
-     0 0  69 px red;
+        0 5px 30px #b96300,
+        5px 0px 10px #de3aff;
     border-radius: 33%;
 
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
