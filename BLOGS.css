@@ -11,3 +11,7 @@
     border-collapse: separate;
     border-spacing: 25px;
 }
+@font-face{
+    font-family:"RammetoOne";
+    src:url("Fuente/RAMMETTO ONE/RammettoOne-Regular.ttf")format("truetype");
+}
