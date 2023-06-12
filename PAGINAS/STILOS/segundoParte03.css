@@ -1,0 +1,149 @@
+.Parte03Tabla{
+    width: 100%;
+    background-image: url("../../Imagenes/IMAGENES DE PARTES/Parte03/image\ \(8\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-collapse: separate;
+    border-spacing: 25px;
+    left: 10%;
+    background-size: cover;
+
+}
+.Parte03IMG {
+    max-height: 230px;
+    max-width: 230px;
+    margin-right: 10px;
+    
+}
+.Parte03TD{
+
+    text-align: center;
+}
+
+.Parte03IMGC{
+    max-height: 300px;
+    max-width: 100%;
+    margin-right: 10px;
+    
+}
+
+
+
+
+
+
+  .Pie-Table{
+   
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-collapse: separate;
+    border-spacing: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background-color:#513A36;
+    border-radius: 5%;
+}
+
+.Pie-TD {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px;
+    color: #F2ECC4;
+    font-family: "Fredoka";
+    
+}
+
+.Pie-IMG {
+    max-height: 60px;
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+.Parte02IMG{
+  box-shadow: 10px 10px 100px #ffd857;
+}
+.Parte03IMGC{
+  box-shadow: 10px 10px 100px #ffd857;
+}
+
+
+  .PIE-TD-CONTACT{
+    font-family: "Abril-Fatface";
+    font-size: 30px;
+    color: white;
+  }
+  @font-face{
+    font-family:"Abril-Fatface";
+    src:url("Fuente/ABRIL FATFACE/AbrilFatface-Regular.ttf")format("truetype");
+}   
+@font-face{
+    font-family:"Fredoka";
+    src:url("Fuente/FREDOKA/Fredoka-VariableFont_wdth\,wght.ttf")format("truetype");
+}   
+
+  .Pie-TR-TITULOS{
+   font-size: 20px;
+  }
+
+  .H2-Blog{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(78, 51, 19);
+  }
+
+  
+
+  .button-Quienes {
+    border: none;
+    z-index: 1;
+    background-color: rgb(255,151,0);
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 50px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute;
+    left: 45%;
+    top: 200%;
+    box-shadow: 5px 6px 0px rgb(153, 56, 0);
+    font-family: "Abril-Fatface";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+    margin-left:40%; 
+  }
+  .button-Quienes:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5) 7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+  .button-Quienes:hover {
+    color: #000;
+  }
+  .button-Quienes:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .button-Quienes:active {
+    box-shadow: 0 0 20px #eaf818;
+  }
+  

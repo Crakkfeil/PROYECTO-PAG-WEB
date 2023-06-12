@@ -93,13 +93,13 @@ button {
 
 
 .TD-Isac {
-    color: red;
-    text-shadow: red 1px 1px 20px;
+    color: rgb(247, 95, 95);
+    text-shadow: rgb(109, 43, 43) 1px 1px 20px;
 
     border: #b83f3f;
     border-style: solid;
     border-radius: 16%;
-    box-shadow: red 1px 1px 20px;
+    box-shadow: rgb(97, 34, 34) 1px 1px 20px;
 }
 
 a{

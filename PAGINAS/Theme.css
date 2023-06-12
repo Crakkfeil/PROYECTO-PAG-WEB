@@ -1,0 +1,61 @@
+.people {
+    display: flex;
+    /* Cambiado a flex */
+    justify-content: flex-start;
+    /* Alinear elementos al inicio */
+    gap: 5px;
+    /* Espacio entre elementos */
+}
+
+
+.Bu-claro {
+    position: relative;
+    padding: 0%;
+    top: 0%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.Bu-oscuro {
+    position: relative;
+    padding: 0%;
+    top: 0%;
+    left: 2%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+}
+
+.claro {
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.oscuro {
+    width: 45px;
+    height: 45px;
+}
+
+
+#theme {
+    background-color: #F2C9C1;
+    transition: background-color 0.5s ease;
+}
+
+.Contenedor{
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    height: 50px;
+    width: 100 px;
+    padding: 4px;
+    border-radius: 15%;
+    transition: background-color 0.5s ease;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="STILOS/segundoParte03.css">
+<link rel="stylesheet" href="STILOS/BLOGS.css">
+<link rel="stylesheet" href="Theme.css">
+<link rel="stylesheet" href="STILOS/REGISTROS.css">
+<link rel="stylesheet" href="STILOS/segundoEncabezado.css">
+    <title>Bienvenido de nuevo</title>
+</head>
+
+<body id="theme">
+    <script src="SCRIPTS/Theme.js"></script>
+    <div class="TituloCont" id="titulocont">
+        <div class="Contenedor" id="conten">
+            <button id="claro" class="Bu-claro"><img src="ImagenesVEC/illust58-5126-01-removebg-preview.png"
+                    class="claro" alt="">
+            </button>
+            <button id="oscuro" class="Bu-oscuro"><img src="ImagenesVEC/luna.png" class="oscuro" alt=""> </button>
+        </div>
+        <h1 id="TituloRegistro">Tu perfil</h1>
+     
+        <div id="ContenidoReg">
+            BIENVENIDO DE NUEVO
+            <div id="correo"> </div>
+        </div>
+    </div>
+    <table class="PolloTabla">
+        <tr>
+            <a href="../index.html">
+                <img class="PolloIcono" src="../Imagenes/LogoMarcaReco.png" alt="">
+            </a>
+
+            </td>
+        </tr>
+    </table>
+    <table class="Pie-Table">
+        <tr class="Pie-TR">
+            <td class="Pie-TD">
+                <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/logo-de-facebook.png" alt="">
+    
+            </td>
+            <td class="Pie-TD">
+                <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/correo-electronico.png" alt="">
+            </td>
+            <td class="Pie-TD">
+                <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/twitter.png" alt="">
+            </td>
+        </tr>
+        <tr class="Pie-TR-CONTACT">
+            <td class="PIE-TD-CONTACT" colspan="3">CONTACTANOS</td>
+        </tr>
+        <tr class="Pie-TR-TITULOS">
+            <td class="Pie-TD">
+                Pollo Dorado
+            </td>
+            <td class="Pie-TD" colspan="2">
+                MAPA DEL SITIO
+            </td>
+        </tr>
+        <tr>
+            <td class="Pie-TD">
+                "La gente hambrienta muere primero, comamos"
+            </td>
+            <td class="Pie-TD">
+                <ul>
+                    <li>Carta</li>
+                    <li>Ofertas</li>
+                    <li>Quienes Somos</li>
+                </ul>
+    
+            </td>
+            <td class="Pie-TD">
+                <ul>
+                    <li>Locales</li>
+    
+                </ul>
+    
+            </td>
+        </tr>
+    </table>
+    <table class="TABLE-Blog">
+        <tr>
+            <h2 class="H2-Blog"> Blogs de los creadores de la pagina web</h2>
+        </tr>
+        <tr class="TR-Blog">
+            <td class="TD-Blog"><a href="Blogs/Isac/index.html">Isac David</a></td>
+            <td class="TD-Blog"><a href="Blogs/Flavio/Flavio Rodriguez Tomas.html">Flavio Rodriguez</a> </td>
+            <td class="TD-Blog"><a
+                    href="Partes/PARTE DELIVERY Y BLOG-20230514T191158Z-001/PARTE DELIVERY Y BLOG/blog/BlogEdu.html"> Edu
+                    Toledo</a></td>
+        </tr>
+    </table>
+    
+
+        <script>
+          
+            let queryString = window.location.search;
+            let urlParams = new URLSearchParams(queryString);
+
+            let email = urlParams.get('email')
+
+
+            let correoDiv = document.getElementById('correo')
+
+          
+            
+            correoDiv.textContent= "Correo: "+ email
+        </script>
+
+</body>
+
+</html>

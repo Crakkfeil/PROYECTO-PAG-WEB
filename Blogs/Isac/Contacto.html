@@ -112,6 +112,7 @@
 </head>
 
 <body>
+    <script src="contacto.js"></script>
     <div class="TR-Titulo">
 
         <a href="index.html">Regresar</a>
@@ -122,7 +123,7 @@
 
         <div class="in-flex">
 
-            <form>
+            <form method="GET" name="regitro">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -132,7 +133,8 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="rellenadatos()">
+                <div id="resultado"></div>
             </form>
         </div>
 

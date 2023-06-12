@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STILOS/segundoParte03.css">
+    <link rel="stylesheet" href="STILOS/BLOGS.css">
+    <link rel="stylesheet" href="Theme.css">
+    <link rel="stylesheet" href="STILOS/REGISTROS.css">
+    <link rel="stylesheet" href="STILOS/segundoEncabezado.css">
+    <link rel="stylesheet" href="reserva.css">
+    <link rel="stylesheet" href="Theme.css">
+    <title>Document</title>
+</head>
+<body id="theme">
+    <script src="SCRIPTS/Theme.js"></script>
+    <div class="TituloCont" id="titulocont">
+        <div class="Contenedor" id="conten">
+            <button id="claro" class="Bu-claro"><img src="ImagenesVEC/illust58-5126-01-removebg-preview.png"
+                    class="claro" alt="">
+            </button>
+            <button id="oscuro" class="Bu-oscuro"><img src="ImagenesVEC/luna.png" class="oscuro" alt=""> </button>
+        </div>
+        <h1 id="TituloRegistro">Crea tu reserva</h1>
+    </div>
+    <table class="PolloTabla">
+        <tr>
+            <a href="../index.html">
+                <img class="PolloIcono" src="../Imagenes/LogoMarcaReco.png" alt="">
+            </a>
+
+            </td>
+        </tr>
+    </table>
+    <!--<div id="resultado" style="background-color: bisque; color: brown;"></div>-->
+    <form  method="GET" name="regitro" >
+        <label for="Nombre">A nombre de quien hacemos la reserva:</label><br>
+        <input type="text" id="Alumno" name="Alumno"><br>
+        <label for="Carrera">Indique lo que consumira y cosas a tomar en cuenta</label><br>
+        <input type="text" id="Carrera" name="Carrera"><br>
+        <label for="Turno">Indique la hora</label><br>
+        <input type="text" name="Turno" id="Turno"><br>
+        <input type="submit" value="Submit" onclick="rellenadatos()">
+        <div id="resultado"></div>
+      </form>
+     
+    <style>
+        #resultado{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+            font-size: 25px;
+
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            background-color: transparent;
+        }
+    
+        .form-group {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+      
+        }
+    
+        .people {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    
+        .person {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 20px;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="form-group">
+            <div>Elige la cantidad de personas</div>
+            <div class="people">
+                <div class="person">1</div>
+                <div class="person">2</div>
+                <div class="person">3</div>
+                <div class="person">4</div>
+                <div class="person">5</div>
+                <div class="person">6</div>
+                <div class="person">7</div>
+                <div class="person">8</div>
+                <div class="person">9</div>
+                <div class="person">10</div>
+                <div class="person">11</div>
+                <div class="person">12</div>
+                <div class="person">13</div>
+                <div class="person">14</div>
+                <div class="person">15</div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="SCRIPTS/reserva.js"></script>
+
+<table class="Pie-Table">
+    <tr class="Pie-TR">
+        <td class="Pie-TD">
+            <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/logo-de-facebook.png" alt="">
+        </td>
+        <td class="Pie-TD">
+            <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/correo-electronico.png" alt="">
+        </td>
+        <td class="Pie-TD">
+            <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/twitter.png" alt="">
+        </td>
+    </tr>
+    <tr class="Pie-TR-CONTACT">
+        <td class="PIE-TD-CONTACT" colspan="3">CONTACTANOS</td>
+    </tr>
+    <tr class="Pie-TR-TITULOS">
+        <td class="Pie-TD">
+            Pollo Dorado
+        </td>
+        <td class="Pie-TD" colspan="2">
+            MAPA DEL SITIO
+        </td>
+    </tr>
+    <tr>
+        <td class="Pie-TD">
+            "La gente hambrienta muere primero, comamos"
+        </td>
+        <td class="Pie-TD">
+            <ul>
+                <li>Carta</li>
+                <li>Ofertas</li>
+                <li>Quienes Somos</li>
+            </ul>
+        </td>
+        <td class="Pie-TD">
+            <ul>
+                <li>Locales</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<table class="TABLE-Blog">
+    <tr>
+        <h2 class="H2-Blog">Blogs de los creadores de la página web</h2>
+    </tr>
+    <tr class="TR-Blog">
+        <td class="TD-Blog"><a href="Blogs/Isac/index.html">Isac David</a></td>
+        <td class="TD-Blog"><a href="Blogs/Flavio/Flavio Rodriguez Tomas.html">Flavio Rodriguez</a></td>
+        <td class="TD-Blog"><a
+                href="Partes/PARTE DELIVERY Y BLOG-20230514T191158Z-001/PARTE DELIVERY Y BLOG/blog/BlogEdu.html">Edu
+                Toledo</a></td>
+    </tr>
+</table>
+</body>
+</html>

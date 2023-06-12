@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2c9c1;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #ebc982;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #24211c;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.TituloCont {
+  background-color: #ebc982;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.PolloIcono {
+  position: absolute;
+  top: 5em;
+  /* ajusta el valor del margen superior según tus necesidades */
+  left: 5em;
+
+  height: 7em;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.MAPA{
+   display: flex;
+  justify-content: center; /* Puedes usar "flex-start", "center" o "flex-end" */
+  align-items: center; /* Puedes usar "flex-start", "center" o "flex-end" */
+}
+
