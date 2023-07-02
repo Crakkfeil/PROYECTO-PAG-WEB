@@ -1,0 +1,92 @@
+/* Estilos para el tema claro */
+.theme-claro {
+    background-color: #F2C9C1;
+    color: #2C2C2C;
+}
+
+.theme-claro .claro{
+    background-color: #FFF;
+    color: #000;
+    border: none;
+
+}
+
+.sol{
+    width: 50px;
+    height: 50px;
+
+}
+/* Estilos para el tema oscuro */
+.theme-oscuro {
+    background-color: #2C2C2C;
+    color: #FFF;
+}
+
+.theme-oscuro .oscuro {
+    background-color: #000000;
+    color: #FFF;
+    border: none;
+}
+
+.luna{
+   width: 45px;
+    height: 45px;
+
+}
+
+.Contenedor{
+    
+    position:absolute;
+    height: 50px;
+    width: 100 px;
+    padding: 4px;
+    border-radius: 15%;
+    padding-bottom: 15px;
+    transition: background-color 0.5s ease;
+
+}
+
+.theme-claro .Contenedor{
+    background-color: rgb(255, 255, 255);
+    
+}
+.theme-oscuro .Contenedor{
+    background-color: #000;
+}
+
+
+.theme-claro .theme-btn{
+    border: none;
+    background-color: transparent;
+    
+}
+.theme-oscuro .theme-btn{
+    border: none;
+    background-color: transparent;
+}
+.aaa{
+    background-color: red;
+    color:#003cff
+}
+.especial{
+    background-color: aqua;
+    color: red,
+}
+
+.cont{
+    background-color: green;
+}
+
+#theme{
+transition: background-color 0.5s ease;
+}
+
+.Contenedor{
+    background-color: #ffffff;
+    color: #FFF;
+    border: none;
+}
+.theme-btn{
+    border: none;
+    background-color: transparent;
+}

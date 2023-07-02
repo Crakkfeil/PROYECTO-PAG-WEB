@@ -24,12 +24,24 @@ input[type="password"] {
   margin-bottom: 20px;
 }
 
+.theme-oscuro form{
+  background-color: #24211c;
+}
+
+
 input[type="submit"] {
   background-color: #ebc982;
   color: #fff;
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+
+
+.theme-oscuro input[type="submit"] {
+  background-color: #3f3724;
+  color: #fff;
+
 }
 
 input[type="submit"]:hover {
@@ -54,6 +66,16 @@ a:hover {
   padding: 5px;
   margin-bottom: 20px;
   transition: background-color 0.5s ease;
+}
+
+.theme-oscuro .TituloCont{
+  background-color: #24211c;
+  color: white;
+}
+
+.theme-claro .TituloCont{
+  background-color: #ebc982;
+  color: rgb(44, 44, 44)
 }
 
 .PolloIcono {
