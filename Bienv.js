@@ -6,4 +6,4 @@ setTimeout(function() {
   animationContainer.classList.add('hidden');
   content.style.opacity = '1';
   content.style.pointerEvents = 'auto';
-}, 1);
+}, 5000);
