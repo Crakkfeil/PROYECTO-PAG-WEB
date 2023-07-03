@@ -4,6 +4,26 @@
     font-family: "RammetoOne";
     text-align: center;
 }
+.theme-oscuro .TR-Blog{
+    background-color: rgba(65, 60, 38, 0.973);
+    color: rgb(255, 255, 255);
+    font-family: "RammetoOne";
+    text-align: center;
+    
+}
+.B-Colo{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+}
+.theme-oscuro .B-Colo{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+}
+.theme-oscuro .B-Colo{
+    text-decoration: none;
+    color:white;
+}
+
 .TABLE-Blog{
 
     width: 100%;

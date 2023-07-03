@@ -1,0 +1,94 @@
+.Contenedor-General{
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+h1{
+    background-color: antiquewhite;
+    color: blue;
+}
+
+
+.img-Oferta{
+    width: 100%;
+}
+.text{
+    padding-right: 50px;
+}
+
+
+
+.contenedor2{
+    background-color: rgba(105, 194, 32, 0.664);
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+.contenedor3 {
+    background-color: rgba(105, 194, 32, 0.664);
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.Contenedor-General {
+    background-color: aquamarine;
+    padding: 10px;
+    overflow: auto; /* Utiliza overflow para establecer el contexto de la clearfix */
+}
+
+.contenedor1,
+.contenedor2
+.contenedor3  {
+    padding: 10px 10px ; /* Añade un relleno de 10px a los lados del contenido */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+}
+
+.contenedor1 {
+    background-color: orange;
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+.contenedor2 {
+    background-color: rgba(105, 194, 32, 0.664);
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+.contenedor3 {
+    background-color: rgba(101, 153, 58, 0.664);
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+/* El resto del CSS... */
+@media screen and (max-width :600px){
+    h1{
+        color: red;
+        font-size: 130%;
+    }
+ 
+    .img-Oferta{
+    width: 100%;
+    }
+       
+    
+    .contenedor1{
+         width: 97%;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .contenedor2{
+        width: 97%;
+    }
+    .Contenedor-General{
+    background-color:red;
+    }
+    .contenedor3{
+        width: 97%;
+    }
+}

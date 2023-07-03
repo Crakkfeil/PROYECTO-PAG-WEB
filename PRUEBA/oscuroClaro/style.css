@@ -14,12 +14,14 @@
 .sol{
     width: 50px;
     height: 50px;
+    cursor: pointer;
 
 }
 /* Estilos para el tema oscuro */
 .theme-oscuro {
     background-color: #2C2C2C;
     color: #FFF;
+    
 }
 
 .theme-oscuro .oscuro {
@@ -31,6 +33,7 @@
 .luna{
    width: 45px;
     height: 45px;
+    cursor: pointer;
 
 }
 
@@ -43,7 +46,7 @@
     border-radius: 15%;
     padding-bottom: 15px;
     transition: background-color 0.5s ease;
-
+    
 }
 
 .theme-claro .Contenedor{
@@ -85,6 +88,19 @@ transition: background-color 0.5s ease;
     background-color: #ffffff;
     color: #FFF;
     border: none;
+
+}
+
+.Contenedor::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px);
+  z-index: -1;
 }
 .theme-btn{
     border: none;

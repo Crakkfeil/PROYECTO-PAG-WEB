@@ -8,12 +8,24 @@
 .Parte02Tabla{
 
     width: 100%;
-    background-image: url('../../Imagenes/IMAGENES DE PARTES/image (4).png');
+    /*background-image: url('../../Imagenes/IMAGENES DE PARTES/image (4).png');*/
+    background-color: rgba(109, 91, 9, 0.555);
     background-repeat: no-repeat;
     background-size: cover;
     border-collapse: separate;
     border-spacing: 25px;
 }
+
+
+.theme-claro .Parte02Tabla{
+    background-color: rgba(109, 91, 9, 0.555);
+}
+
+.theme-oscuro .Parte02Tabla{
+    background-color: rgb( 30, 30, 30);
+}
+
+
 .Parte02TR:hover {background-color:#f5f5f500;}
 .Parte02TH {
     background-color: #f1f1f100;
@@ -28,6 +40,8 @@
     text-align: center;
 
 }
+
+
 .Parte02IMG {
     max-height: 230px;
     max-width: 230px;
@@ -40,6 +54,14 @@
  font-family: "Georgia";
 
 }
+.theme-claro .Parte02LI{
+    color: rgb(0,0,0)
+}
+.theme-oscuro .Parte02LI{
+    color: rgb(187, 187, 187)
+}
+
+
 .Parte02TR:first-child {
     text-align: center;
 }
@@ -51,9 +73,27 @@
     font-family: "RammetoOne";
     text-align: center;
 }
+.theme-claro .Parte02TR-OFERTA{
+    background-color: rgba(250, 212, 44, 0.719);
+    color: black;
+}
+.theme-oscuro .Parte02TR-OFERTA{
+    background-color: rgba(68, 58, 13, 0.719);
+    color: rgba(255, 255, 255, 0.767);
+}
+
+
 .Parte02TR-PLATOS{
     background-color: rgba(240, 248, 255, 0.411);
 }
+
+.theme-claro .Parte02TR-PLATOS {
+    background-color: rgba(240, 248, 255, 0.411);
+}
+.theme-oscuro .Parte02TR-PLATOS {
+    background-color: rgba(45, 47, 49, 0.411);
+}
+
 
 @font-face{
     font-family:"RammetoOne";
@@ -66,4 +106,38 @@
 
 .Parte02TD-OFERTA{
     border-radius: 4%;
+}
+
+
+.Parte02Tabla {
+  max-width: 100%;
+  width: 100%;
+}
+
+.Parte02IMG {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .Parte02TD,
+  .Parte02TD-OFERTA {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .Parte02UL {
+    margin: 5px 0;
+  }
+
+  .Parte02LI {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 480px) { /* Tamaño similar al de un iPhone */
+  .Parte02IMG:first-child,
+  .Parte02TD-OFERTA:first-child,
+  .Parte02TD:first-child .Parte02UL {
+    width: 100%;
+    display: block;
+  }
 }

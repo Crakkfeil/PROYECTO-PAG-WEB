@@ -1,0 +1,82 @@
+.Contenedor-General{
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+h1{
+    background-color: antiquewhite;
+    color: blue;
+}
+
+img{
+    width: 100%;
+
+}
+.text{
+    padding-right: 50px;
+}
+
+.contenedor1{
+    background-color: orange;
+    width: 25%;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contenedor2{
+    background-color: rgba(105, 194, 32, 0.664);
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.Contenedor-General {
+    background-color: aquamarine;
+    padding: 10px;
+    overflow: auto; /* Utiliza overflow para establecer el contexto de la clearfix */
+}
+
+.contenedor1,
+.contenedor2 {
+    padding: 10px 10px ; /* Añade un relleno de 10px a los lados del contenido */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+}
+
+.contenedor1 {
+    background-color: orange;
+    width: 25%;
+    float: left;
+    margin: 5px;
+}
+
+.contenedor2 {
+    background-color: rgba(105, 194, 32, 0.664);
+    width: 25%;
+    float: left;
+    margin: 5px;
+}
+
+/* El resto del CSS... */
+@media screen and (max-width :600px){
+    h1{
+        color: red;
+        font-size: 130%;
+    }
+    img{
+        width: 100%;
+
+       
+    }
+    .contenedor1{
+         width: 97%;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .contenedor2{
+        width: 97%;
+    }
+
+}
