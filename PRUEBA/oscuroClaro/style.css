@@ -89,6 +89,7 @@ transition: background-color 0.5s ease;
     color: #FFF;
     border: none;
 
+
 }
 
 .Contenedor::before{
@@ -105,4 +106,26 @@ transition: background-color 0.5s ease;
 .theme-btn{
     border: none;
     background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+
+    .Contenedor{
+    border: none;
+    z-index: 1;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 250px;
+    }
+
 }

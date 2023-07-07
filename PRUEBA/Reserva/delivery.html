@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delivery</title>
+</head>
+
+<body>
+    <h2>Información de Entrega</h2>
+
+    <h3>Total del Pedido</h3>
+    <div id="total"></div>
+
+    <h3>Formulario de Entrega</h3>
+    <form id="deliveryForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" required>
+        <br>
+        <label for="phone">Teléfono:</label>
+        <input type="number" id="phone" required>
+        <br>
+        <label for="city">Ciudad:</label>
+        <select id="city" required>
+            <option value="">Selecciona una ciudad</option>
+            <option value="Lima Centro">Lima Centro</option>
+            <option value="San Isidro">San Isidro</option>
+            <option value="Miraflores">Miraflores</option>
+            <option value="Barranco">Barranco</option>
+            <option value="Surco">Surco</option>
+            <option value="La Molina">La Molina</option>
+            <option value="San Borja">San Borja</option>
+            <option value="Callao">Callao</option>
+            <option value="Ate Vitarte">Ate Vitarte</option>
+            <option value="Santa Anita">Santa Anita</option>
+            <option value="Chorrillos">Chorrillos</option>
+            <option value="Magdalena del Mar">Magdalena del Mar</option>
+            <option value="Pueblo Libre">Pueblo Libre</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="Independencia">Independencia</option>
+            <option value="Comas">Comas</option>
+            <option value="Villa El Salvador">Villa El Salvador</option>
+            <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+            <option value="Los Olivos">Los Olivos</option>
+            <option value="Surquillo">Surquillo</option>
+            <option value="Breña">Breña</option>
+            <option value="La Victoria">La Victoria</option>
+            <option value="Rímac">Rímac</option>
+            <option value="San Martín de Porres">San Martín de Porres</option>
+        </select>
+        <br>
+        <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <h3>Resumen del Delivery</h3>
+        <p> El costo por delivery es de S/0.1 por minuto en la llegada de tu pedido</p>
+        <p id="deliveryTime"></p>
+
+    <div id="deliverySummary"></div>
+
+
+    <script>
+        // Obtener el parámetro "total" de la URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var total = urlParams.get('total');
+        // Mostrar el total en el elemento correspondiente
+        var totalElement = document.getElementById("total");
+        totalElement.textContent = "Total del Pedido: S/" + total;
+
+        document.getElementById("deliveryForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+            var city = document.getElementById("city").value;
+            var deliveryTime = calculateDeliveryTime(city);
+            var name = document.getElementById("name").value;
+            var TiempoDelivery = parseFloat(deliveryTime) * 0.10
+            var totalPayment = parseFloat(total) + parseFloat(TiempoDelivery); // Convertir a números antes de sumar
+
+            var deliverySummaryElement = document.getElementById("deliverySummary");
+            deliverySummaryElement.textContent = 
+                "Total a Pagar: S/" + totalPayment.toFixed(2) + "\n"
+
+            document.getElementById("deliveryTime").textContent = "Hola " + name + ", tu pedido a "+ city  +" llegará en " + deliveryTime + ".";
+        });
+
+        // Función para calcular el tiempo de entrega basado en la ciudad seleccionada
+        function calculateDeliveryTime(city) {
+            var baseDeliveryTime = 30; // Tiempo base en minutos desde Surco
+            var distanceMap = {
+                "Lima Centro": 30,
+                "San Isidro": 40,
+                "Miraflores": 40,
+                "Barranco": 45,
+                "Surco": 40,
+                "La Molina": 50,
+                "San Borja": 40,
+                "Callao": 45,
+                "Ate Vitarte": 60,
+                "Santa Anita": 50,
+                "Chorrillos": 50,
+                "Magdalena del Mar": 45,
+                "Pueblo Libre": 40,
+                "San Miguel": 45,
+                "Independencia": 60,
+                "Comas": 60,
+                "Villa El Salvador": 30,
+                "San Juan de Miraflores": 30,
+                "Los Olivos": 60,
+                "Surquillo": 40,
+                "Breña": 35,
+                "La Victoria": 35,
+                "Rímac": 40,
+                "San Martín de Porres": 60
+            };
+
+            if (distanceMap.hasOwnProperty(city)) {
+                var distance = distanceMap[city];
+                var deliveryTime = baseDeliveryTime + (distance * 2); // Asumiendo una velocidad promedio de 2 minutos por km
+
+                return deliveryTime + " minutos";
+            } else {
+                return "no se pudo calcular el tiempo de entrega";
+            }
+        }
+    </script>
+</body>
+
+</html>

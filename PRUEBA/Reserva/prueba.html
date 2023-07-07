@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../PAGINAS/STILOS/segundoParte03.css">
+    <link rel="stylesheet" href="../../PAGINAS/STILOS/BLOGS.css">
+    <link rel="stylesheet" href="../../PAGINAS/reserva.css">
+    <!--<link rel="stylesheet" href="Theme.css">-->
+    <link rel="stylesheet" href="../../PAGINAS/STILOS/REGISTROS.css">
+    <link rel="stylesheet" href="../../PAGINAS/STILOS/segundoEncabezado.css">
+    <link rel="stylesheet" href="../../PRUEBA/oscuroClaro/style.css">
+    <link rel="icon" href="../../Imagenes/Ico1.ico">
+    <link rel="stylesheet" href="Carta.css">
+
+    <title>Sistema de Reservas</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .Container-Factura {
+            background-color: #dbab43;
+            padding: 20px;
+            max-width: 360px;
+            margin: 0 auto;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+          .theme-claro .Container-Factura{
+    background-color: #dbab43;
+    color: rgb(44, 44, 44);
+  }
+    .theme-oscuro .Container-Factura{
+    background-color: #141311;
+    color: rgb(255,255,255);
+  }
+    </style>
+</head>
+
+<body id="theme">
+    <!--<script src="SCRIPTS/Theme.js"></script>-->
+    <script src="../../PRUEBA/oscuroClaro/script.js"></script>
+    <div class="TituloCont" id="titulocont">
+        <div class="Contenedor" id="conten">
+            <button class="theme-btn claro" data-theme="claro"><img
+                    src="../../PAGINAS/ImagenesVEC/illust58-5126-01-removebg-preview.png" class="sol" alt="">
+            </button>
+            <button class="theme-btn oscuro" data-theme="oscuro"><img src="../../PAGINAS/ImagenesVEC/luna.png"
+                    class="luna" alt="">
+        </div>
+        <button class="Regresa"><a href="../index.html">Regresa al inicio</a></button>
+
+        <h1 id="TituloRegistro"> Reserva</h1>
+    </div>
+    <table class="PolloTabla">
+        <tr>
+            <a href="../index.html">
+                <img class="PolloIcono" src="../../Imagenes/LogoMarcaReco.png" alt="">
+            </a>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+    <div class="container">
+
+        <form id="reservationForm">
+            <h3>Total del Pedido</h3>
+            <div id="total"></div>
+            <br>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="partySize">Tamaño del grupo:</label>
+                <input type="number" id="partySize" required>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    <div class="Container-Factura">
+        Factura de Pago:
+        <div id="resumen"></div>
+    </div>
+    <br>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

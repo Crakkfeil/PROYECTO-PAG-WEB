@@ -1,90 +1,176 @@
-.Contenedor-General{
-    background-color: aquamarine;
-    padding: 10px;
-}
-
-
-
-.img-Oferta{
-    width: 100%;
-}
-.text{
-    padding-right: 50px;
-}
-
-
-
-.contenedor2{
-    background-color: rgba(105, 194, 32, 0.664);
-    width: 25%;
-    padding: 10px;
-    margin: 5px;
-}
-.contenedor3 {
-    background-color: rgba(105, 194, 32, 0.664);
-    width: 25%;
-    padding: 10px;
-    margin: 5px;
-}
-
 .Contenedor-General {
-    background-color: aquamarine;
-    padding: 10px;
-    overflow: auto; /* Utiliza overflow para establecer el contexto de la clearfix */
+  background-color: rgba(109, 91, 9, 0.555);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Utiliza overflow para establecer el contexto de la clearfix */
+}
+
+.img-Oferta {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+.text {
+  padding-right: 80px;
+  text-align: center;
+  border-radius: 10%;
 }
 
 .contenedor1,
-.contenedor2
-.contenedor3  {
-    padding: 10px 10px ; /* Añade un relleno de 10px a los lados del contenido */
-    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
-}
-
-.contenedor1 {
-    background-color: orange;
-    width: 30%;
-    float: left;
-    margin: 5px;
-}
-
-.contenedor2 {
-    background-color: rgba(105, 194, 32, 0.664);
-    width: 30%;
-    float: left;
-    margin: 5px;
-}
+.contenedor2,
 .contenedor3 {
-    background-color: rgba(101, 153, 58, 0.664);
-    width: 30%;
-    float: left;
-    margin: 5px;
+  padding: 10px 10px; /* Añade un relleno de 10px a los lados del contenido */
+  box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+  width: 30%;
+  float: left;
+  margin: 5px;
+  width: 25%;
 }
+
+
+.Contenedor-General-ICONO {
+  background-color: rgba(109, 91, 9, 0.555);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Utiliza overflow para establecer el contexto de la clearfix */
+}
+
+.Icono-IMG {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+
+.Icono-1,
+.Icono-2,
+.Icono-3 {
+  padding: 10px 10px; /* Añade un relleno de 10px a los lados del contenido */
+  box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+  width: 30%;
+  float: left;
+  margin: 5px;
+  width: 25%;
+}
+
+
 
 /* El resto del CSS... */
-@media screen and (max-width :600px){
-    h1{
-        color: red;
-        font-size: 130%;
-    }
- 
-    .img-Oferta{
-    width: 100%;
-    }
-       
+@media screen and (max-width: 600px) {
+  .img-Oferta {
+    width: 60%;
+  }
+
+  .contenedor1, 
+  .contenedor2, 
+  .contenedor3{
+    width: 97%;
+  }
+  .text {
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text1 {
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Contenedor-General {
+    display: block;
     
-    .contenedor1{
-         width: 97%;
-    }
-    .text{
-        font-size: 20px;
-    }
-    .contenedor2{
-        width: 97%;
-    }
-    .Contenedor-General{
-    background-color:red;
-    }
-    .contenedor3{
-        width: 97%;
-    }
+  }
+  
+    .Icono-1, 
+    .Icono-3, 
+    .Icono-2{
+    width: 60%;
+    margin:  20% 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .Contenedor-General-ICONO {
+    display: block;
+    
+  }
+
+
 }
+
+
+.Parte02TR-PLATOS {
+  background-color: rgba(240, 248, 255, 0.411);
+}
+
+.theme-oscuro .text {
+  background-color: rgba(45, 47, 49, 0.411);
+}
+.theme-claro .text {
+  background-color: rgba(240, 248, 255, 0.411);
+}
+
+.theme-oscuro .Contenedor-General {
+  background-color: rgb(30, 30, 30);
+}
+
+.theme-claro .Parte02Tabla {
+  background-color: rgba(109, 91, 9, 0.555);
+}
+
+.theme-oscuro .Parte02Tabla {
+  background-color: rgb(30, 30, 30);
+}
+
+.contenedor1 .img-Oferta {
+  width: 60%;
+}
+
+.contenedor2 .img-Oferta {
+  width: 60%;
+}
+.contenedor3 .img-Oferta {
+  width: 60%;
+}
+
+.text1 {
+  background-color: rgba(250, 212, 44, 0.719);
+  color: black;
+  text-align: center;
+  font-family: "RammetoOne";
+}
+.theme-claro .text1 {
+  background-color: rgba(250, 212, 44, 0.719);
+  color: black;
+  text-align: center;
+  font-family: "RammetoOne";
+}
+.theme-oscuro .text1 {
+  background-color: rgba(68, 58, 13, 0.719);
+  color: rgba(255, 255, 255, 0.767);
+  font-family: "RammetoOne";
+}
+
+.theme-claro .Contenedor-General-ICONO {
+  background-color: rgba(109, 91, 9, 0.555);
+}
+
+.theme-oscuro .Contenedor-General-ICONO {
+  background-color: rgb(30, 30, 30);
+}
+

@@ -138,6 +138,8 @@
     gap: 10%;
     background-color: #000000b2;
     align-content: center;
+    justify-content: space-between;
+    z-index: 2;
 }
 
 
@@ -147,7 +149,20 @@
     border-style: inherit;
     width: 100%;
     padding: 8px;
+    display: inline-block;
 }
+@media (max-width: 600px) {
+  .encabex {
+    flex-direction: column;
+  }
+
+  .button-encabezado {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
 
 .button-encabezado:hover{
     background-color: rgba(146, 146, 146, 0.76);
@@ -307,3 +322,11 @@ body {
     box-shadow: 0 0 20px #eaf818;
   }
   
+
+  @media screen and (max-width: 600px) {
+ .PolloIcono {
+    display: none;
+    }
+    
+
+}

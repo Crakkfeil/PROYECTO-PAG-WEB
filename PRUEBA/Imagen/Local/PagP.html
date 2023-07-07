@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subir imagen</title>
+    <style>
+        /*#contenedor-imagen img {
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+
+        }*/
+    </style>
+</head>
+
+<body>
+    <!--<input type="file" id="imagen" accept="image/*">
+    <button onclick="subirImagen()">Subir</button>
+    <div style="width: 400px; height: 400px; background-color: red;">
+    <div id="contenedor-imagen"></div>
+    </div>
+    <script>
+        function subirImagen() {
+            var input = document.getElementById('imagen'); 
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var image = new Image();
+                    image.src = e.target.result;
+
+                    var contenedorImagen = document.getElementById('contenedor-imagen');
+
+                    // Eliminar la imagen anterior, si existe
+                    if (contenedorImagen.firstChild) {
+                        contenedorImagen.removeChild(contenedorImagen.firstChild);
+                    }
+
+                    contenedorImagen.appendChild(image);
+
+                    // Almacenar la imagen en el almacenamiento local del navegador
+                    localStorage.setItem('imagen', e.target.result);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Verificar si hay una imagen almacenada en el almacenamiento local al cargar la página
+        window.onload = function () {
+            var imagenAlmacenada = localStorage.getItem('imagen');
+            if (imagenAlmacenada) {
+                var image = new Image();
+                image.src = imagenAlmacenada;
+
+                var contenedorImagen = document.getElementById('contenedor-imagen');
+                contenedorImagen.appendChild(image);
+            }
+        }
+    </script>-->
+</body>
+
+</html>

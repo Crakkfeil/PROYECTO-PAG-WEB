@@ -14,6 +14,10 @@ label {
   display: block;
   margin-bottom: 10px;
 }
+
+input[type="number"],
+input[type="time"],
+input[type="date"],
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -100,4 +104,61 @@ select {
   justify-content: center; /* Puedes usar "flex-start", "center" o "flex-end" */
   align-items: center; /* Puedes usar "flex-start", "center" o "flex-end" */
 }
+
+@media screen and (max-width: 600px) {
+ .PolloIcono {
+    display: none;
+    }
+
+
+}
+
+
+.Regresa{
+  display: none;
+}
+#ContenidoReg p{
+  font-size: 70%;
+  text-align: justify;
+  margin: 30px;
+
+}
+
+.certificado-Quienes{
+  width: 30%;
+  
+}
+
+@media (max-width: 600px) {
+  .Regresa{
+    display: block;
+    border: none;
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    background-color: #dbab43;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .theme-claro .Regresa{
+    background-color: #dbab43;
+    color: rgb(44, 44, 44);
+  }
+    .theme-oscuro .Regresa{
+    background-color: #141311;
+    color: rgb(255,255,255);
+  }
+  .Regresa a:hover{
+    text-decoration: none;
+  }
+  .certificado-Quienes{
+    width: 90%;
+  }
+
+}
+
 

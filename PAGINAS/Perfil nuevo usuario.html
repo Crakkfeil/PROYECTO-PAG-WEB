@@ -4,29 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="STILOS/segundoParte03.css">
-<link rel="stylesheet" href="STILOS/BLOGS.css">
-<!--<link rel="stylesheet" href="Theme.css">-->
-<link rel="stylesheet" href="STILOS/REGISTROS.css">
-<link rel="stylesheet" href="STILOS/segundoEncabezado.css">
-<link rel="stylesheet" href="../PRUEBA/oscuroClaro/style.css">
+    <link rel="stylesheet" href="STILOS/segundoParte03.css">
+    <link rel="stylesheet" href="STILOS/BLOGS.css">
+    <!--<link rel="stylesheet" href="Theme.css">-->
+    <link rel="stylesheet" href="STILOS/REGISTROS.css">
+    <link rel="stylesheet" href="STILOS/segundoEncabezado.css">
+    <link rel="stylesheet" href="../PRUEBA/oscuroClaro/style.css">
+    <link rel="icon" href="../Imagenes/Ico1.ico">
+    <link rel="stylesheet" href="STILOS/Foto-perfil.css">
 
     <title>Nuevo usuario</title>
 </head>
 
 <body id="theme">
-<!--<script src="SCRIPTS/Theme.js"></script>-->
-<script src="../PRUEBA/oscuroClaro/script.js"></script>
+    <!--<script src="SCRIPTS/Theme.js"></script>-->
+    <script src="../PAGINAS/SCRIPTS/Foto/perfil.js"></script>
+    <script src="../PRUEBA/oscuroClaro/script.js"></script>
 
     <div class="TituloCont" id="titulocont">
         <div class="Contenedor" id="conten">
-            <button class="theme-btn claro" data-theme="claro"><img src="ImagenesVEC/illust58-5126-01-removebg-preview.png"
-                    class="sol" alt="">
+            <button class="theme-btn claro" data-theme="claro"><img
+                    src="ImagenesVEC/illust58-5126-01-removebg-preview.png" class="sol" alt="">
             </button>
-            <button  class="theme-btn oscuro" data-theme="oscuro"><img src="ImagenesVEC/luna.png" class="luna" alt=""> </button>
+            <button class="theme-btn oscuro" data-theme="oscuro"><img src="ImagenesVEC/luna.png" class="luna" alt="">
+            </button>
         </div>
+        <button class="Regresa"><a href="../index.html">Regresa al inicio</a></button>
+
         <h1 id="TituloRegistro">Tu perfil</h1>
-     
+
+
+        
+        <div class="contenedor-perfil">
+            <div class="div-padre" id="contenedor-imagen">
+                <div class="div-hijo">
+                    <img class="img-perfil-defecto" src="../Imagenes/Elementos/Perfil_por_defecto.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <label for="imagen" class="contenedor-boton">Cambia tu foto de Perfil
+            <input type="file" id="imagen" accept="image/*" class="boton-personalizado">
+        </label>
+        
+        <div id="contenedor-imagen"></div>
+        
+        <button class="boton-subir" onclick="subirImagen()">Subir</button>
+        <br>
+        <br>
+        
+
+
+
+
+
+
         <div id="ContenidoReg">
             BIENVENIDO NUEVO USUARIO
             <div id="contenido"></div>
@@ -47,7 +80,7 @@
         <tr class="Pie-TR">
             <td class="Pie-TD">
                 <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/logo-de-facebook.png" alt="">
-    
+
             </td>
             <td class="Pie-TD">
                 <img class="Pie-IMG" src="Imagenes/IMAGENES DE PARTES/Parte03/correo-electronico.png" alt="">
@@ -77,14 +110,14 @@
                     <li>Ofertas</li>
                     <li>Quienes Somos</li>
                 </ul>
-    
+
             </td>
             <td class="Pie-TD">
                 <ul>
                     <li>Locales</li>
-    
+
                 </ul>
-    
+
             </td>
         </tr>
     </table>
@@ -96,29 +129,30 @@
             <td class="TD-Blog"><a href="Blogs/Isac/index.html">Isac David</a></td>
             <td class="TD-Blog"><a href="Blogs/Flavio/Flavio Rodriguez Tomas.html">Flavio Rodriguez</a> </td>
             <td class="TD-Blog"><a
-                    href="Partes/PARTE DELIVERY Y BLOG-20230514T191158Z-001/PARTE DELIVERY Y BLOG/blog/BlogEdu.html"> Edu
+                    href="Partes/PARTE DELIVERY Y BLOG-20230514T191158Z-001/PARTE DELIVERY Y BLOG/blog/BlogEdu.html">
+                    Edu
                     Toledo</a></td>
         </tr>
     </table>
-    
 
-        <script>
-         
-            let queryString = window.location.search;
-            let urlParams = new URLSearchParams(queryString);
-            let nombre = urlParams.get('nombre');
-            let email = urlParams.get('email')
-            let password = urlParams.get('password');
 
-            let correoDiv = document.getElementById('correo')
-            let contraseñaDiv = document.getElementById('contraseña')
-         
-            let contenidoDiv = document.getElementById('contenido');
-            contenidoDiv.textContent = 'Bienvenido: ' + nombre
-            
-            correoDiv.textContent= "Correo: "+ email
-            contraseñaDiv.textContent= "Contraseña: " + password
-        </script>
+    <script>
+
+        let queryString = window.location.search;
+        let urlParams = new URLSearchParams(queryString);
+        let nombre = urlParams.get('nombre');
+        let email = urlParams.get('email')
+        let password = urlParams.get('password');
+
+        let correoDiv = document.getElementById('correo')
+        let contraseñaDiv = document.getElementById('contraseña')
+
+        let contenidoDiv = document.getElementById('contenido');
+        contenidoDiv.textContent = 'Bienvenido: ' + nombre
+
+        correoDiv.textContent = "Correo: " + email
+        contraseñaDiv.textContent = "Contraseña: " + password
+    </script>
 
 </body>
 
