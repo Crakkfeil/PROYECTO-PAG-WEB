@@ -29,7 +29,7 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
   //reservationDetails += "Bebidas seleccionadas:\n" + selectedDrinks.join(", ");
   
   var totalReservation = total * partySize
-  reservationDetails += "Total a pagar: " +  totalReservation + " \n";
+  reservationDetails += "Total a pagar: S/" +  totalReservation + " \n";
 
 
 document.getElementById("resumen").innerText = reservationDetails;

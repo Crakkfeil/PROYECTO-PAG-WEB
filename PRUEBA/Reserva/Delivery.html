@@ -15,12 +15,45 @@
     <link rel="icon" href="../../Imagenes/Ico1.ico">
     <link rel="stylesheet" href="Carta.css">
 
-    <title>Sistema de Reservas</title>
+    <title>Delivery</title>
+        <style>
+            .container {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        
+            .form-group {
+                margin-bottom: 10px;
+            }
+        
+            .form-group label {
+                display: block;
+                font-weight: bold;
+            }
+        
+            .Container-Factura {
+                background-color: #dbab43;
+                padding: 20px;
+                max-width: 360px;
+                margin: 0 auto;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        
+            .theme-claro .Container-Factura {
+                background-color: #dbab43;
+                color: rgb(44, 44, 44);
+            }
+        
+            .theme-oscuro .Container-Factura {
+                background-color: #141311;
+                color: rgb(255, 255, 255);
+            }
+        </style>
 </head>
 
 <body id="theme">
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-07d2cb62-3208-4f76-b73c-87012c40204c"></div>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-07d2cb62-3208-4f76-b73c-87012c40204c"></div>
 
     <!--<script src="SCRIPTS/Theme.js"></script>-->
     <script src="../../PRUEBA/oscuroClaro/script.js"></script>
@@ -34,7 +67,7 @@
         </div>
         <button class="Regresa"><a href="../../index.html">Regresa al inicio</a></button>
 
-        <h1 id="TituloRegistro"> Reserva</h1>
+        <h1 id="TituloRegistro"> Delivery</h1>
     </div>
     <table class="PolloTabla">
         <tr>
@@ -46,11 +79,12 @@
         </tr>
     </table>
 
-    <h3>Total del Pedido</h3>
-    <div id="total"></div>
+    
 
     <h3>Formulario de Entrega</h3>
     <form id="deliveryForm">
+        <h3>Total del Pedido</h3>
+        <div id="total"></div>
         <label for="name">Nombre:</label>
         <input type="text" id="name" required>
         <br>
@@ -89,16 +123,18 @@
             <option value="San Martín de Porres">San Martín de Porres</option>
         </select>
         <br>
-        <button type="submit">Enviar Pedido</button>
+        <input type="submit" value="Enviar Pedido">
     </form>
 
     <h3>Resumen del Delivery</h3>
+    <div class="Container-Factura">
         <p> El costo por delivery es de S/0.1 por minuto en la llegada de tu pedido</p>
         <p id="deliveryTime"></p>
 
-    <div id="deliverySummary"></div>
-
-
+        <div id="deliverySummary"></div>
+    </div>
+    <br>
+    <br>
     <script>
         // Obtener el parámetro "total" de la URL
         var urlParams = new URLSearchParams(window.location.search);
@@ -117,10 +153,10 @@
             var totalPayment = parseFloat(total) + parseFloat(TiempoDelivery); // Convertir a números antes de sumar
 
             var deliverySummaryElement = document.getElementById("deliverySummary");
-            deliverySummaryElement.textContent = 
+            deliverySummaryElement.textContent =
                 "Total a Pagar: S/" + totalPayment.toFixed(2) + "\n"
 
-            document.getElementById("deliveryTime").textContent = "Hola " + name + ", tu pedido a "+ city  +" llegará en " + deliveryTime + ".";
+            document.getElementById("deliveryTime").textContent = "Hola " + name + ", tu pedido a " + city + " llegará en " + deliveryTime + ".";
         });
 
         // Función para calcular el tiempo de entrega basado en la ciudad seleccionada
