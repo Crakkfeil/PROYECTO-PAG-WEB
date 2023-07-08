@@ -28,7 +28,12 @@
 
 .BebidaCont {
   overflow: hidden;
+ 
 }
+
+
+
+
 
 .carrucelbebida {
   display: flex;
@@ -71,3 +76,47 @@
 .theme-oscuro #theme{
   background-color: rgb(194, 47, 47);
 }
+
+
+
+
+.DesplazamientoControles {
+  display: none;
+}
+
+.DesplazamientoControles button {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .PlatosCont .Item,
+  .BebidaCont .Item {
+    flex: 0 0 200px; /* Ajusta el ancho del carrusel según tus necesidades */
+    margin-right: 10px;
+  }
+
+  .PlatosCont .Item:last-child,
+  .BebidaCont .Item:last-child {
+    margin-right: 0;
+  }
+}
+
+.carrucelbebida{
+  text-align: center;
+  
+}
+
+.Item{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+;
+}
+@media (max-width: 600px) {
+.carrucelbebida {
+  display: none;
+  transition: transform 0.3s ease;
+}
+ 
+}
+

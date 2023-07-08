@@ -104,12 +104,12 @@ function redirectToDelivery() {
   var total = getTotal();
 
   // Redireccionar a la página de entrega con el precio total como parámetro en la URL
-  window.location.href = "delivery.html?total=" + total;
+  window.location.href = "Delivery.html?total=" + total;
 }
 
 function redirectToReserva(){
   var total = getTotal();
-  window.location.href = "prueba.html?total=" + total
+  window.location.href = "Reservas.html?total=" + total
 }
 
 // Función para obtener el precio total del carrito
@@ -120,3 +120,19 @@ function getTotal() {
   }
   return total.toFixed(2);
 }
+
+
+//Ofertas
+function redirectToDeliveryOfertas() {
+  // Obtener el precio total
+  var total = getTotal();
+
+  // Redireccionar a la página de entrega con el precio total como parámetro en la URL
+  window.location.href = "../PRUEBA/Reserva/Delivery.html?total=" + total;
+}
+
+function redirectToReservaOfertas(){
+  var total = getTotal();
+  window.location.href = "../PRUEBA/Reserva/Reservas.html?total=" + total
+}
+

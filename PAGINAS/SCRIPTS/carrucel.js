@@ -1,22 +1,38 @@
+
+  function handleViewportChange() {
+
+  }
 $(document).ready(function() {
-  $(".PlatosCont").hover(
-    function() {
-      $(this).find(".Carrusel").stop().animate({ "margin-left": "-1700px" }, 1000);
-    },
-    function() {
-      $(this).find(".Carrusel").stop().animate({ "margin-left": "0" }, 1000);
-    }
-  );
+  handleViewportChange();
+  $(window).on("resize", handleViewportChange);
+
+  setInterval(function() {
+    $(".PlatosCont").each(function() {
+      if (window.innerWidth >= 0 && window.innerWidth > 600) {
+        var carrusel = $(this).find(".Carrusel");
+        var marginLeft = parseInt(carrusel.css("margin-left"));
+        if (marginLeft <= -1700) {
+          marginLeft = 0;
+        } else {
+          marginLeft -= 100;
+        }
+        carrusel.stop().animate({ "margin-left": marginLeft + "px" }, 1000);
+      }
+    });
+    
+    $(".BebidaCont").each(function() {
+      if (window.innerWidth >= 0 && window.innerWidth > 600) {
+        var carrusel = $(this).find(".carrucelbebida");
+        var marginLeft = parseInt(carrusel.css("margin-left"));
+        if (marginLeft <= -1700) {
+          marginLeft = 0;
+        } else {
+          marginLeft -= 100;
+        }
+        carrusel.stop().animate({ "margin-left": marginLeft + "px" }, 1000);
+      }
+    });
+
+  }, 1000); // Intervalo de tiempo en milisegundos (1 segundo en este caso)
+
 });
-
-$(document).ready(function(){
-    $(".BebidaCont").hover(
-    function() {
-      $(this).find(".carrucelbebida").stop().animate({ "margin-left": "-1700px" }, 1000);
-    },
-    function() {
-      $(this).find(".carrucelbebida").stop().animate({ "margin-left": "0" }, 1000);
-    }
-  );
-})
-
