@@ -73,9 +73,6 @@ function checkout() {
     total += cartItems[i].price;
   }
 
-  // Mostrar el total en una alerta
-  alert("Total del pedido: $" + total);
-
   // Limpiar el carrito
   cartItems = [];
   updateCartTable();
