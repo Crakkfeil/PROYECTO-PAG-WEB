@@ -1,15 +1,35 @@
 .TR-Blog{
-    background-color: rgba(211, 193, 114, 0.973);
+
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TD-Blog {
+  flex: 1 0 33.33%;
+  margin-bottom: 20px; 
+  margin-left: 20px;
+      background-color: rgba(211, 193, 114, 0.973);
     color: black;
     font-family: "RammetoOne";
-    text-align: center;
+    border-radius: 20px;
 }
-.theme-oscuro .TR-Blog{
+
+.theme-oscuro .TD-Blog{
     background-color: rgba(65, 60, 38, 0.973);
     color: rgb(255, 255, 255);
     font-family: "RammetoOne";
     text-align: center;
     
+}
+
+
+@media (max-width: 600px) {
+  .TD-Blog {
+    flex: 1 0 100%;
+  }
 }
 .B-Colo{
     text-decoration: none;
