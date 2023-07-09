@@ -29,16 +29,27 @@ a{
     padding: 25px;
     background-color: #1d0000;
     margin: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     box-shadow: 0 0 10px black;
-    border-radius: 10%;
+    border-radius: 20px;
     box-shadow: 0 0 25px #ffc857;
     border-style: solid;
     border-color: #ffc857;
-
+    
 }
 
 .in-flex div {
+    padding: 25px;
+    background-color: #314253;
+    margin: 20px;
+    box-shadow: 0 0 15px rgb(84, 218, 177);
+    border-radius: 20px;
+    color: #BDD9BF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.in-flex .Div {
     padding: 25px;
     background-color: #2E4052;
     margin: 20px;
@@ -48,6 +59,9 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+
 .in-flex h1,
 h3 {
     text-align: center;
@@ -56,8 +70,7 @@ h3 {
     /* Centra el elemento verticalmente */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 145, 117);
-    text-shadow: 0px 0px 5px rgb(255, 0, 0);
-    animation: blink 1s linear infinite;
+    animation: blink 4s linear infinite;
     size: 100px;
     font-size: 40px;
 }
@@ -82,7 +95,8 @@ h3 {
 .primero,
 .segundo,
 .tercero,
-.cuarto {
+.cuarto,
+.quinto {
     padding: 10px;
     padding-left: 5%;
     padding-right: 5%;
@@ -97,7 +111,7 @@ h3 {
         width: 100%;
         max-width: 768px;
         margin: 0 auto;
-
+        border-radius: 20px;
     }
 
     .primero,
@@ -113,6 +127,7 @@ h3 {
     .cuarto:hover {
         box-shadow: 0 0 10px rgb(115, 255, 49);
         text-shadow: 0 0 20px #2dff3b;
+        border-radius: 20px;
 
     }
     .github img{
@@ -125,7 +140,7 @@ h3 {
     .BOTONES {
         width: auto;
         flex-wrap: wrap;
-        border-radius: 10%;
+        border-radius: 20px;
         margin: 20px;
         margin-bottom: 0px;
     }
@@ -147,7 +162,7 @@ h3 {
         border-radius: 0;
         box-shadow: 0 0 10px rgb(115, 255, 49);
         text-shadow: 0 0 20px #2dff3b;
-        border-radius: 5%;
+        border-radius: 20px;
     }
 
     .in-flex h1,
@@ -278,4 +293,16 @@ img {
     100% {
         opacity: 0;
     }
+}
+
+
+
+
+
+
+.Redes img {
+    transition: transform 0.3s ease;
+}
+ .Redes img:hover {
+    transform: scale(1.2);
 }

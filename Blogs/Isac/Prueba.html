@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+html
+<input type="text" id="searchInput" placeholder="Buscar...">
+<ul id="list">
+
+  <div>A</div>
+  <div>B</div>
+
+  <h1>Come gatos</h1>
+  <h1>Come peras</h1>
+</ul>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      var searchValue = this.value.toLowerCase();
+      var listItems = document.querySelectorAll('#list h1');
+      listItems.forEach(function (item) {
+        var itemText = item.textContent.toLowerCase();
+        if (itemText.includes(searchValue)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

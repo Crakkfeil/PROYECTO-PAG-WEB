@@ -112,6 +112,26 @@
 </head>
 
 <body>
+        <script>
+        function mostrarResumen() {
+            // Obtener los valores del formulario
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var telefono = document.getElementById("telefono").value;
+            var fecha = document.getElementById("fecha").value;
+            var hora = document.getElementById("hora").value;
+
+            // Mostrar el resumen debajo del formulario
+            var resumen = "Resumen de la reserva:<br>";
+            resumen += "Nombre: " + nombre + "<br>";
+            resumen += "Email: " + email + "<br>";
+            resumen += "Teléfono: " + telefono + "<br>";
+            resumen += "Fecha de reserva: " + fecha + "<br>";
+            resumen += "Hora de reserva: " + hora + "<br>";
+
+            document.getElementById("resumen").innerHTML = resumen;
+        }
+    </script>
     <script src="contacto.js"></script>
     <div class="TR-Titulo">
 
@@ -121,21 +141,23 @@
 
     <div class="home">
 
-        <div class="in-flex">
-
-            <form method="GET" name="regitro">
+        <div class="in-flex" style="width: 100px; height: auto; margin-bottom: 10px;">
+            <form>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
+                <input type="text" id="nombre" name="nombre" required><br><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <input type="submit" value="Enviar" onclick="rellenadatos()">
-                <div id="resultado"></div>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                <label for="fecha">Fecha de reserva:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <label for="hora">Hora de reserva:</label>
+                <input type="time" id="hora" name="hora" required><br><br>
+                <input type="submit" value="Reservar" onclick="mostrarResumen()">
+                <div id="resumen"></div>
             </form>
+
+
         </div>
 
 

@@ -53,6 +53,7 @@ tr {
     max-height: 230px;
     max-width: 230px;
     margin-right: 5px;
+    border-radius: 20px;
 }
 
 button {
@@ -98,7 +99,8 @@ button {
 
     border: #b83f3f;
     border-style: solid;
-    border-radius: 16%;
+        border-radius: 60px;
+
     box-shadow: rgb(97, 34, 34) 1px 1px 20px;
 }
 
@@ -124,6 +126,7 @@ color: green;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .in-flex:first-child {
@@ -137,6 +140,7 @@ color: green;
         box-shadow: 0 0 25px #ffc857;
         border-style: solid;
         border-color: #ffc857;
+        border-radius: 60px;
 
     }
 
@@ -148,6 +152,8 @@ color: green;
         border-radius: 20%;
         color: #BDD9BF;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 60px;
+
     }
 
     .in-flex {
@@ -185,6 +191,8 @@ color: green;
         background-color: transparent;
         box-shadow: none;
     }
+
+
 }
 
 /* Estilos de los botones en pantallas más pequeñas */
@@ -221,6 +229,7 @@ color: green;
         box-shadow: 0 0 25px #ffc857;
         border-style: solid;
         border-color: #ffc857;
+        border-radius: 60px;
 
     }
 
@@ -232,6 +241,8 @@ color: green;
         border-radius: 20%;
         color: #BDD9BF;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 60px;
+
     }
 
     .in-flex {
@@ -272,4 +283,15 @@ color: green;
     }
 
 
+}
+.CERTIFICADOS img {
+  max-width: 100%;
+  height: auto;
+}
+.CERTIFICADOS{
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        float: right;
+        min-width: 250px;
 }

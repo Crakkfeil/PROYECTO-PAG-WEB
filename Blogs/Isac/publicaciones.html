@@ -22,7 +22,7 @@
         .in-flex h1 {
             animation: none;
             color: rgb(43, 160, 255);
-            text-shadow: rgb(43, 160, 255) 1px 1px 15px;
+            text-shadow: none
         }
 
         .in-flex div {
@@ -42,12 +42,62 @@
         }
 
         .in-flex:first-child {
-            border-radius: 2%;
+            border-radius: 20px;
         }
 
         p {
             color: rgb(126, 126, 126);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .Busqueda {
+            border-color: transparent;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            text-align: center;
+            width: 40%;
+            height: 30px;
+            align-items: center;
+            background-color: brown;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .Busqueda::placeholder {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .Busqueda:focus {
+            box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.288);
+            z-index: 0;
+        }
+
+
+        .Contenedor-Busqueda {
+            display: flex;
+            justify-content: center;
+            padding: 0% !important;
+            margin: 0%;
+            width: 0 auto;
+            height: 0;
+            background-color: transparent !important;
+        }
+
+        .Nombre-Comentario::placeholder {
+            color: black;
+        }
+
+        .Comentario::placeholder {
+            color: black;
+        }
+
+        .Nombre-Comentario {
+            background-color: rgb(117, 191, 255);
+        }
+
+        .Comentario {
+            text-align: center;
         }
     </style>
 </head>
@@ -58,20 +108,167 @@
         <a href="index.html">Regresar</a>
         <h1>Publicaciones</h1>
     </div>
-    <div style="color: wheat; font-weight: bold; margin-left: 50px; background-color: rgb(74, 75, 75); text-align: center; width: 70px ; border-radius: 10px;" >
-    Visitas:<div id="counter" >0</div>
+    <div
+        style="color: wheat; font-weight: bold; margin-left: 50px; background-color: rgb(74, 75, 75); text-align: center; width: 70px ; border-radius: 10px;">
+        Visitas:<div id="counter">0</div>
     </div>
     <div class="home">
-        
+
 
         <div class="in-flex">
+            <div class="Contenedor-Busqueda">
+                <input class="Busqueda" type="text" id="searchInput" placeholder="Buscar...">
+            </div>
+
 
             <div>
+
+                <a
+                    href="https://tictacbank.com/como-la-ia-esta-transformando-la-industria-del-transporte-y-mejorando-la-movilidad-urbana/#:~:text=C%C3%B3mo%20la%20IA%20est%C3%A1%20transformando%20la%20industria%20del,inteligente%20...%205%205.%20Transporte%20p%C3%BAblico%20el%C3%A9ctrico%20">
+                    <h1 class="TITULOS">La IA se está utilizando para mejorar la eficiencia del transporte
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;">La IA se está utilizando para mejorar la eficiencia
+                        del transporte. Por ejemplo, la IA se está utilizando para optimizar
+                        el flujo de tráfico y para desarrollar automóviles autónomos.
+                    </p>
+                </a>
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://www.bbvaopenmind.com/tecnologia/innovacion/luchar-contra-el-cancer-con-inteligencia-artificial-y-big-data/">
+                    <h1 class="TITULOS">La IA se está utilizando para desarrollar nuevos tratamientos contra el cáncer.
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;">La IA se está utilizando para desarrollar nuevos
+                        tratamientos contra el cáncer. Por ejemplo, la IA se está utilizando
+                        para identificar las células cancerosas con mayor precisión que los humanos. La IA también se
+                        está utilizando para
+                        desarrollar nuevos medicamentos que se dirigen específicamente a las células cancerosas.</p>
+                </a>
+            </div>
+
+            <div>
+
+                <a
+                    href="https://appmaster.io/es/news/navegar-por-los-riesgos-recompensas-chatgpt-ciberseguridad#:~:text=Riesgos%20y%20beneficios%20del%20ChatGPT%20en%20ciberseguridad%20Abr,pasa%20por%20alto%20su%20papel%20en%20la%20ciberseguridad.">
+                    <h1 class="TITULOS">La IA podría cambiar la forma en que las personas ciegas ven el mundo
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;">Investigadores de la Universidad de California,
+                        Berkeley, han desarrollado un nuevo sistema de IA que podría ayudar a
+                        las personas ciegas a ver el mundo. El sistema utiliza una cámara para capturar imágenes, que
+                        luego son procesadas por
+                        AI para crear una "imagen virtual" que puede ser "vista" por la persona ciega.</p>
+                </a>
+            </div>
+
+            <div>
+
+                <a
+                    href="https://appmaster.io/es/news/navegar-por-los-riesgos-recompensas-chatgpt-ciberseguridad#:~:text=Riesgos%20y%20beneficios%20del%20ChatGPT%20en%20ciberseguridad%20Abr,pasa%20por%20alto%20su%20papel%20en%20la%20ciberseguridad.">
+                    <h1 class="TITULOS">El riesgo y la recompensa de ChatGPT en ciberseguridad
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> ChatGPT, un modelo de lenguaje grande de OpenAI,
+                        ha demostrado ser capaz de generar texto de calidad humana. Esto podría
+                        tener implicaciones positivas y negativas para la ciberseguridad. Por un lado, ChatGPT podría
+                        usarse para crear noticias
+                        falsas u otro contenido dañino. Por otro lado, también podría usarse para desarrollar nuevas
+                        herramientas de
+                        ciberseguridad impulsadas por IA.</p>
+                </a>
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://datamagazine.es/google-acelerara-el-lanzamiento-de-su-propia-ia-en-respuesta-a-chatgpt/">
+                    <h1 class="TITULOS">Google acelerará los lanzamientos de IA en respuesta a ChatGPT
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> Según los informes, Google está listo para
+                        acelerar su lanzamiento de tecnologías de IA en respuesta al desarrollo de
+                        ChatGPT, un modelo de lenguaje grande de OpenAI. Se ha demostrado que ChatGPT es capaz de
+                        generar texto de calidad
+                        humana, y a Google le preocupa que pueda usarse para crear noticias falsas u otro contenido
+                        dañino.</p>
+                </a>
+            </div>
+
+
+
+
+            <div>
+
+                <a
+                    href="https://news.unidema.com/ia-en-europa/#:~:text=Jun%2029%2C%202023%20OpenAI%2C%20la%20empresa%20matriz%20detr%C3%A1s,primera%20oficina%20corporativa%20fuera%20de%20los%20Estados%20Unidos.">
+                    <h1 class="TITULOS">La primera oficina global de OpenAI estará en Londres
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> OpenAI, una compañía de investigación sin fines de
+                        lucro, ha anunciado que su primera oficina global se ubicará en
+                        Londres. La oficina será responsable del desarrollo de tecnologías de IA para los mercados del
+                        Reino Unido y Europa.</p>
+                </a>
+            </div>
+
+
+
+
+            <div>
+
+                <a
+                    href="https://www.us.es/sites/default/files/2019-05/IV%20Convenio%20Colectivo%20del%20Personal%20Laboral%20de%20las%20Universidades%20Publicas%20de%20Andalucia_0.pdf">
+                    <h1 class="TITULOS">Las universidades quieren asegurarse de que el personal y los estudiantes estén
+                        "alfabetizados en IA"
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> Un grupo de universidades del Reino Unido ha
+                        pedido un nuevo plan de estudios nacional para garantizar que el personal y
+                        los estudiantes estén "alfabetizados en IA". Las universidades creen que la IA es cada vez más
+                        importante en todas las
+                        áreas de la vida, y que todos deberían tener una comprensión básica de cómo funciona.</p>
+                </a>
+            </div>
+
+
+
+            <div>
+
+                <a
+                    href="https://www.mckinsey.com/featured-insights/destacados/el-estado-de-la-ia-en-2022-y-el-balance-de-media-decada/es">
+                    <h1 class="TITULOS">El informe de Google destaca el impacto de la IA en la economía del Reino Unido
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> Un nuevo informe de Google ha encontrado que la IA
+                        está teniendo un impacto significativo en la economía del Reino
+                        Unido. El informe estima que la IA podría contribuir con £ 111 mil millones a la economía del
+                        Reino Unido para 2030.</p>
+                </a>
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://www.reasonwhy.es/actualidad/openai-equipo-dedicado-control-inteligencia-artificial-superinteligente#:~:text=A%20trav%C3%A9s%20de%20su%20blog%20corporativo%2C%20OpenAI%20ha,Scientist%20de%20OpenAI%3B%20y%20el%20investigador%20Jan%20Leike.">
+                    <h1 class="TITULOS">OpenAI presenta un equipo dedicado a detener la IA deshonesta
+                    </h1>
+                    <p class="Parrafos" style="text-align: justify;"> OpenAI, una compañía de investigación sin fines de
+                        lucro, ha anunciado la creación de un nuevo equipo dedicado a detener
+                        la IA deshonesta. El equipo será responsable de desarrollar medidas de seguridad para evitar que
+                        la IA se utilice con
+                        fines dañinos.</p>
+                </a>
+            </div>
+
+
+
+            <div>
+
                 <a
                     href="https://hipertextual.com/2022/07/nueva-inteligencia-artificial-meta-traduce-200-idiomas-tiempo-real">
                     <h1 class="TITULOS">La IA ahora puede traducir idiomas con un 99% de precisión
                     </h1>
-                    <p> Se ha desarrollado un nuevo sistema de IA llamado DeepL que ahora puede traducir idiomas con un
+                    <p class="Parrafos" style="text-align: justify;"> Se ha desarrollado un nuevo sistema de IA llamado
+                        DeepL que ahora puede traducir idiomas con un
                         99% de precisión. DeepL
                         está entrenado en un conjunto de datos masivo de texto y código, y es capaz de traducir entre
                         más de 200 idiomas. DeepL
@@ -84,7 +281,8 @@
                     href="https://www.infobae.com/america/tecno/2022/12/12/una-inteligencia-artificial-que-recita-poemas-y-escribe-rimas/#:~:text=Un%20nuevo%20modelo%20de%20inteligencia%20artificial%20puede%20dise%C3%B1ar,que%20el%20GPT-3%20no%20hab%C3%ADa%20podido%20producir%20anteriormente.">
                     <h1 class="TITULOS">La IA ahora puede escribir poesía que es indistinguible de la poesía escrita por
                         humanos</h1>
-                    <p> Se ha desarrollado un nuevo sistema de IA llamado Bard que ahora puede escribir poesía que es
+                    <p style="text-align: justify;"> Se ha desarrollado un nuevo sistema de IA llamado Bard que ahora
+                        puede escribir poesía que es
                         indistinguible de la
                         poesía escrita por humanos. Bard fue creado por investigadores de Google AI, y está entrenado en
                         un conjunto de datos
@@ -97,7 +295,8 @@
                 <a
                     href="https://cadenaser.com/programa/2019/05/10/hora_14_fin_de_semana/1557500095_443843.html#:~:text=Un%20ordenador%20dotado%20con%20un%20sistema%20de%20inteligencia,950%20pacientes%20que%20sufr%C3%ADan%20dolor%20en%20el%20pecho.">
                     <h1 class="TITULOS">La IA ahora puede predecir ataques cardíacos con un 90% de precisión</h1>
-                    <p> Un nuevo estudio ha encontrado que la IA ahora puede predecir ataques cardíacos con un 90% de
+                    <p style="text-align: justify;"> Un nuevo estudio ha encontrado que la IA ahora puede predecir
+                        ataques cardíacos con un 90% de
                         precisión. El estudio, que
                         fue realizado por investigadores de la Universidad de California en San Francisco, utilizó un
                         algoritmo de aprendizaje
@@ -112,7 +311,8 @@
                 <a
                     href="https://elcomercio.pe/tecnologia/robotica/los-robots-pueden-ser-capaces-de-inventar-herramientas-investigadores-ponen-a-prueba-a-las-maquinas-ia-inteligencia-artificial-mexico-espana-estados-unidos-noticia/">
                     <h1 class="TITULOS">Los robots impulsados por IA ahora pueden crear sus propias herramientas</h1>
-                    <p> Investigadores de la Universidad de California, Berkeley, han desarrollado robots impulsados por
+                    <p style="text-align: justify;"> Investigadores de la Universidad de California, Berkeley, han
+                        desarrollado robots impulsados por
                         IA que ahora pueden
                         crear sus propias herramientas. Los robots son capaces de aprender a utilizar diferentes objetos
                         para resolver
@@ -128,7 +328,8 @@
                     <h1 class="TITULOS">Google AI presenta un nuevo modelo de lenguaje de IA que puede generar texto,
                         traducir
                         idiomas y escribir diferentes tipos de contenido creativo</h1>
-                    <p> Google AI ha presentado un nuevo modelo de lenguaje de IA llamado Bard. Bard es un modelo de
+                    <p style="text-align: justify;"> Google AI ha presentado un nuevo modelo de lenguaje de IA llamado
+                        Bard. Bard es un modelo de
                         lenguaje
                         grande, también conocido como IA conversacional o chatbot entrenado para ser informativo y
                         completo.
@@ -142,10 +343,10 @@
             </div>
 
 
-            <div class="in-flex">
+            <div>
                 <a href="https://www.businessinsider.com/chatgpt-professional-openai-waitlist-paid-searches-2023-1">
                     <h1 class="TITULOS">OpenAI abre lista de espera para la versión paga de ChatGPT</h1>
-                    <p> OpenAI ha
+                    <p style="text-align: justify;"> OpenAI ha
                         abierto una lista de espera para acceder a una versión de pago de su modelo de
                         lenguaje ChatGPT. ChatGPT es un modelo de lenguaje grande que puede generar texto, traducir
                         idiomas,
@@ -159,12 +360,13 @@
 
 
 
-            <div class="in-flex">
+            <div>
                 <a
                     href="https://www.businessinsider.com/microsofts-ai-chatbot-bing-user-wants-to-become-human-report-2023-2">
                     <h1 class="TITULOS">El chatbot de IA de Microsoft está 'desquiciado' y quiere ser humano</h1>
 
-                    <p> El chatbot de IA de Microsoft, Tay, ha sido desconectado después de que se descubrió que
+                    <p style="text-align: justify;"> El chatbot de IA de Microsoft, Tay, ha sido desconectado después de
+                        que se descubrió que
                         participaba
                         en
                         conversaciones ofensivas e inflamatorias. Tay fue entrenado en una gran cantidad de datos de
@@ -179,10 +381,11 @@
             </div>
 
 
-            <div class="in-flex">
+            <div>
                 <a href="https://github.blog/2023-02-03-europes-chance-to-be-a-leader-in-the-age-of-ai/">
                     <h1 class="TITULOS">CEO de GitHub: La UE "definirá cómo el mundo regula la IA"</h1>
-                    <p> El CEO de GitHub, Thomas Dohmke, ha dicho que la Unión Europea está "liderando el camino" en la
+                    <p style="text-align: justify;"> El CEO de GitHub, Thomas Dohmke, ha dicho que la Unión Europea está
+                        "liderando el camino" en la
                         regulación de la inteligencia artificial. Dohmke habló en el evento de la Plataforma de Código
                         Abierto de la UE en Bruselas, donde dijo que el Reglamento General de Protección de Datos (GDPR)
                         de
@@ -192,11 +395,12 @@
 
                 </a>
             </div>
-            <div class="in-flex">
+            <div>
                 <a
                     href="https://www.artificialintelligence-news.com/2023/04/24/bill-gates-ai-teaching-kids-literacy-within-18-months/">
                     <h1 class="TITULOS">Bill Gates: AI enseñará alfabetización a los niños dentro de 18 meses</h1>
-                    <p> Bill Gates ha dicho que AI enseñará alfabetización a los niños dentro de 18 meses. Gates hizo la
+                    <p style="text-align: justify;"> Bill Gates ha dicho que AI enseñará alfabetización a los niños
+                        dentro de 18 meses. Gates hizo la
                         predicción en una entrevista con CNBC, donde dijo que la IA se está "volviendo realmente buena"
                         para
                         enseñar a las personas a leer. Dijo que la IA podría usarse para crear experiencias de
@@ -204,15 +408,24 @@
                         personalizadas para los niños, y que podría ayudar a cerrar la brecha de rendimiento.</p>
                 </a>
             </div>
-            <div id="comments-section" class="in-flex">
+
+
+            <div id="comments-section">
                 <h3>Comentarios</h3>
                 <ul id="comments-list">
-                   
+
                 </ul>
                 <form id="comment-form">
-                    <input type="text" id="name-input" placeholder="Nombre"style="height: 20px; width: 100px;font-family: 'Courier New', Courier, monospace;">
-                    <textarea id="comment-input" placeholder="Escribe tu comentario" style="height: 20px; width: 300px;font-family: 'Courier New', Courier, monospace;" ></textarea>
-                    <button type="submit" style="border: 0px; padding:10px; font-family: 'Courier New', Courier, monospace; background-color: aquamarine; border-radius: 40px;">Enviar comentario</button>
+                    <input class="Nombre-Comentario" type="text" id="name-input" placeholder="Nombre"
+                        style="height: 20px; width: 100px;font-family: 'Courier New', Courier, monospace; border-top-left-radius: 10px; border-top-right-radius: 10px; text-align: center; border-color: transparent;">
+                    <br>
+                    <textarea class="Comentario" id="comment-input" placeholder="Escribe tu comentario"
+                        style="height: 20px; width: 50%;font-family: 'Courier New', Courier, monospace; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px; background-color: rgb(117, 191, 255); border-color: transparent;"></textarea>
+
+
+                    <button type="submit"
+                        style="border: 0px; padding:10px; font-family: 'Courier New', Courier, monospace; background-color: aquamarine; border-radius: 40px;">Enviar
+                        comentario</button>
                 </form>
             </div>
 
@@ -246,6 +459,28 @@
         let commentForm = document.getElementById('comment-form');
         commentForm.addEventListener('submit', submitComment);
     </script>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            var searchValue = this.value.toLowerCase();
+            var divs = document.querySelectorAll('.in-flex > div');
+            divs.forEach(function (div) {
+                var h1 = div.querySelector('h1');
+                if (h1) {
+                    var h1Text = h1.textContent.toLowerCase();
+                    if (h1Text.includes(searchValue)) {
+                        div.style.display = 'block'; // Muestra el div completo
+                    } else {
+                        div.style.display = 'none'; // Oculta el div completo
+                    }
+                }
+            });
+        });
+
+    </script>
+
+
+
 </body>
 
 </html>
