@@ -112,26 +112,7 @@
 </head>
 
 <body>
-        <script>
-        function mostrarResumen() {
-            // Obtener los valores del formulario
-            var nombre = document.getElementById("nombre").value;
-            var email = document.getElementById("email").value;
-            var telefono = document.getElementById("telefono").value;
-            var fecha = document.getElementById("fecha").value;
-            var hora = document.getElementById("hora").value;
 
-            // Mostrar el resumen debajo del formulario
-            var resumen = "Resumen de la reserva:<br>";
-            resumen += "Nombre: " + nombre + "<br>";
-            resumen += "Email: " + email + "<br>";
-            resumen += "Teléfono: " + telefono + "<br>";
-            resumen += "Fecha de reserva: " + fecha + "<br>";
-            resumen += "Hora de reserva: " + hora + "<br>";
-
-            document.getElementById("resumen").innerHTML = resumen;
-        }
-    </script>
     <script src="contacto.js"></script>
     <div class="TR-Titulo">
 
@@ -153,7 +134,7 @@
                 <input type="date" id="fecha" name="fecha" required><br><br>
                 <label for="hora">Hora de reserva:</label>
                 <input type="time" id="hora" name="hora" required><br><br>
-                <input type="submit" value="Reservar" onclick="mostrarResumen()">
+            <input type="submit" value="Reservar" onclick="mostrarResumen(event)">
                 <div id="resumen"></div>
             </form>
 
@@ -166,6 +147,28 @@
 
 
     </div>
+
+            <script>
+               function mostrarResumen(event) {
+                    event.preventDefault();
+                    // Obtener los valores del formulario
+                    var nombre = document.getElementById("nombre").value;
+                    var email = document.getElementById("email").value;
+                    var telefono = document.getElementById("telefono").value;
+                    var fecha = document.getElementById("fecha").value;
+                    var hora = document.getElementById("hora").value;
+
+                    // Mostrar el resumen debajo del formulario
+                    var resumen = "Resumen de la reserva:<br>";
+                    resumen += "Nombre: " + nombre + "<br>";
+                    resumen += "Email: " + email + "<br>";
+                    resumen += "Teléfono: " + telefono + "<br>";
+                    resumen += "Fecha de reserva: " + fecha + "<br>";
+                    resumen += "Hora de reserva: " + hora + "<br>";
+
+                    document.getElementById("resumen").innerHTML = resumen;
+                }
+            </script>
 </body>
 
 </html>
